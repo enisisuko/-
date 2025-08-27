@@ -1,5 +1,3 @@
-
-
 # === 中文版 README ===
 cat > README.md << 'MD'
 <!-- lang switch -->
@@ -67,27 +65,28 @@ cat > README.md << 'MD'
 ---
 
 ## 🧩 系统设计蓝图
-┌────────── Economy ──────────┐ ┌────── Combat ──────┐
-│ Gold Bldg → Coins ─┐ │ │ Units & AI │
-│ Lumen Bldg → Population ─┬─┼──► │ Waves / Formations │
-│ Job Bldg → Classes ─┘ │ │ Boss Phases │
-│ Altar → Global Buffs │ └────────┬───────────┘
-└─────────────┬───────────────┘ │
-▼ ▼
-Hero Emergence Visual Feedback
-(Unique, high impact) (Shake/Trail/Glow)
+```
+┌────────── Economy ──────────┐     ┌────── Combat ──────┐
+│  Gold Bldg  →  Coins  ─┐     │     │  Units & AI        │
+│  Lumen Bldg →  Population ─┬─┼──►  │  Waves / Formations │
+│  Job Bldg   →  Classes   ─┘  │     │  Boss Phases        │
+│  Altar      →  Global Buffs  │     └────────┬───────────┘
+└─────────────┬───────────────┘                │
+              ▼                                ▼
+         Hero Emergence                  Visual Feedback
+      (Unique, high impact)            (Shake/Trail/Glow)
 
+```
+进阶与稀缺：职业升阶与祭坛加成存在瓶颈与唯一性，鼓励差异化解。
 
+波次节拍：建设→战斗→复盘→再建设；短期容错与长期曲线并存。
 
-- **进阶与稀缺**：职业升阶与祭坛加成存在**瓶颈**与**唯一性**，鼓励差异化解。
-- **波次节拍**：建设→战斗→复盘→再建设；短期容错与长期曲线并存。
-- **资源流**：金币、人口、职业位与祭坛加成交错，形成可被“雕刻”的策略空间。
+资源流：金币、人口、职业位与祭坛加成交错，形成可被“雕刻”的策略空间。
 
----
+⚙️ 快速开始
+需要：Visual Studio 2022（含“使用 C++ 的桌面开发”组件）、Windows 10/11 SDK
 
-## ⚙️ 快速开始
-> 需要：Visual Studio 2022（含“使用 C++ 的桌面开发”组件）、Windows 10/11 SDK
-```bash
+```
 git clone https://github.com/enisisuko/-.git
 cd -
 # 打开解决方案用 VS 构建（建议 Release）
@@ -97,7 +96,7 @@ cd -
 大体积纹理/音频请使用 Git LFS（如 .tga）；
 
 不要将任何受限/商业 SDK 文件纳入版本控制（例如专有主机 SDK）1.
-
+```
 🗺️ Roadmap
  主线三章 & 多阶段 Boss
 
@@ -177,7 +176,7 @@ cat > README.ja.md << 'MD'
 予定：左スティック ↔ WASD、十字キー ↔ 方向キー、右トリガー ↔ Space。
 
 🧩 システム設計
-
+```
 ┌────────── Economy ──────────┐     ┌────── Combat ──────┐
 │ Gold → Coin Flow ─┐             │     │ Units / AI          │
 │ Lumen→ Population ─┬─┬──────────┼──►  │ Waves / Formations   │
@@ -186,6 +185,7 @@ cat > README.ja.md << 'MD'
 └───────────┬─────────┘          │                   │
             ▼                    ▼                   ▼
       Hero Emergence       Economy Tuning      Visual Feedback
+```
 希少性とボトルネック：職業進化と祭壇バフには唯一性と臨界があり、分岐解を促す。
 
 ウェーブの律動：建設→戦闘→内省→再建設。短期の猶予と長期曲線が併存。
@@ -195,7 +195,7 @@ cat > README.ja.md << 'MD'
 ⚙️ クイックスタート
 必要：Visual Studio 2022（C++デスクトップ開発）、Windows 10/11 SDK
 
-
+```
 git clone https://github.com/enisisuko/-.git
 cd -
 # ソリューションを開いてビルド（Release 推奨）
@@ -205,7 +205,7 @@ cd -
 大容量のテクスチャ/オーディオには Git LFS を推奨（.tga 等）
 
 制限付き/商用 SDK はバージョン管理に含めないでください1.
-
+```
 🗺️ Roadmap
  本編 3 章 & 段階的ボス
 
@@ -237,3 +237,14 @@ PR / Issue を歓迎します。PR 前に 貢献ガイド（コード規約、�
 プロジェクト：<../../projects>
 
 <p align="center"> <sub>もし気に入っていただけたら ⭐ を。あなたの視線が、浄土の半径を広げる。</sub> </p>
+echo "✅ 已生成 README.md / README.ja.md"
+
+
+
+---
+
+素素直接把上面整段贴进 **Git Bash** 执行就好～  
+如果你需要 **PowerShell 版本**（`Set-Content` + here-string）或想自动加上 **GitHub Pages 语言跳转页**，跟菜娘说一声，我立刻给你补上可执行脚本哟 (づ˘◡˘)づ ♡
+Footnotes
+出于合规与安全考虑，任何受限/商业 SDK（如某些主机平台 SDK）不得随仓库分发。
+MD ↩ ↩2
