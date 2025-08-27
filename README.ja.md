@@ -46,13 +46,13 @@ cat > README.ja.md << 'MD'
 
 ## 🧩 システム設計
 ```
-┌────────── Economy ──────────┐     ┌────── Combat ──────┐
-│ Gold → Coin Flow ─┐             │     │ Units / AI          │
-│ Lumen→ Population ─┬─┬──────────┼──►  │ Waves / Formations   │
-│ Jobs → Classes   ─┘ │          │     │ Boss Phases          │
-│ Altar→ Global Buffs  │          │     └────────┬────────────┘
-└───────────┬─────────┘          │                   │
-            ▼                    ▼                   ▼
+┌────────── Economy ──────────┐                 ┌────── Combat ───────┐
+│ Gold → Coin Flow    ─┐      │     │ Units / AI          │
+│ Lumen→ Population           ─┬─┬──────────┼──►  │ Waves / Formations│
+│ Jobs → Classes      ─┘      │          │     │ Boss Phases          │
+│ Altar→ Global Buffs         │          │     └────────┬─────────────┘
+└───────────┬───────────┘     │                   │
+            ▼                 ▼                   ▼
       Hero Emergence       Economy Tuning      Visual Feedback
 ```
 希少性とボトルネック：職業進化と祭壇バフには唯一性と臨界があり、分岐解を促す。
@@ -96,14 +96,7 @@ PR / Issue を歓迎します。PR 前に 貢献ガイド（コード規約、�
 ## 📝 ライセンス
 本リポジトリは個人プロジェクトとして公開中であり、商用利用は禁止です。最終的なライセンスは Releases および LICENSE にて告知します。
 
-## 🔗 クイックリンク
-ダウンロード：<../../releases>
 
-不具合・提案：<../../issues>
-
-ドキュメント：<../../wiki>
-
-プロジェクト：<../../projects>
 
 <p align="center"> <sub>もし気に入っていただけたら ⭐ を。あなたの視線が、浄土の半径を広げる。</sub> </p>
 
