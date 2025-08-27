@@ -20,7 +20,7 @@ cat > README.md << 'MD'
   <a href="#-操作--输入映射">操作</a> ·
   <a href="#-系统设计蓝图">系统</a> ·
   <a href="#-快速开始">开始</a> ·
-  <a href="#-roadmap">Roadmap</a> ·
+  <a href="#-Roadmap">Roadmap</a> ·
   <a href="#-贡献">贡献</a>
 </p>
 
