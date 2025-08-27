@@ -1,59 +1,157 @@
-# 光灵传说 · Lumen Saga
+<!-- hero -->
+<h1 align="center">光灵传说 · Lumen Saga</h1>
+<p align="center">
+  <em>当文明褪去，仍需有人将光点燃。</em>
+</p>
+<p align="center">
+  <a href="../../releases"><img alt="Releases" src="https://img.shields.io/badge/download-releases-3b82f6"></a>
+  <a href="../../issues"><img alt="Issues" src="https://img.shields.io/github/issues/enisisuko/-"></a>
+  <a href="../../commits"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/enisisuko/-"></a>
+  <a href="../../stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/enisisuko/-?style=social"></a>
+</p>
 
-> 在被黑暗侵蚀的大地上，最后的洁净之地仍在歌唱。  
-> 你将点亮法阵、建造圣坛、召唤光灵——用希望对抗深渊。
-
-[![Last Commit](https://img.shields.io/github/last-commit/enisisuko/-)](../../commits)
-[![Open Issues](https://img.shields.io/github/issues/enisisuko/-)](../../issues)
-[![Releases](https://img.shields.io/badge/download-releases-blue)](../../releases)
-[![Wiki](https://img.shields.io/badge/docs-wiki-forestgreen)](../../wiki)
-
-> **一句话版本**：一款“建造 × 招募 × 职业进阶”的波次防卫游戏。通过建筑收集资源、培养光灵，进阶为星空魔法师与森林战士，守护圣女与最后的净土。
-
----
-
-## ✨ 亮点特性
-
-- **四类核心建筑**：  
-  - **金币建筑**：每个波次结束自动结算金币。  
-  - **光灵建筑**：每个波次结束招募新光灵。  
-  - **职业建筑**：将光灵转化为 _星空魔法师_ / _森林战士_，升级可提升阶位；满级诞生**英雄级单位**（唯一、强力增益）。  
-  - **圣女祭坛**：全队核心增幅——提升圣女与防御塔的生命、攻击与回复；满级化作**至高圣女**，法阵急速扩展并对敌造成伤害。
-- **多样敌军编队**：小兵、弓手、冲锋手、盾兵……阵型推进、分段压制，迫使你在“经济—军备—祭坛”之间做策略取舍。  
-- **节奏感波次**：建设与战斗交替上演，容错与爆发并存；局内经济、人口与职业曲线可被你**精确雕刻**。  
-- **轻量而富表现的美术**：光晕、拖影、抖屏、飘字、击退与震击反馈交织，圣女法阵扩张时的能量涟漪**令人上瘾**。  
-- **键鼠 / 手柄双栈输入**：PC 上自然游玩；未来版本将支持主机后端（见 Roadmap）。
-
-> 想直接玩？→ 前往 **[Releases](../../releases)** 下载最新构建。  
-> 遇到问题？→ 提一个 **[Issue](../../issues)**，我会跟进与修复。  
-> 想看设计细节？→ 访问 **[Wiki](../../wiki)**。
+<p align="center">
+  <a href="#-概览">概览</a> ·
+  <a href="#-核心玩法与美术表现">玩法</a> ·
+  <a href="#-世界观与叙事底色">世界观</a> ·
+  <a href="#-操作--输入映射">操作</a> ·
+  <a href="#-系统设计蓝图">系统</a> ·
+  <a href="#-快速开始">开始</a> ·
+  <a href="#-roadmap">Roadmap</a> ·
+  <a href="#-贡献">贡献</a>
+</p>
 
 ---
 
-## 🕹️ 操作（默认设置）
+## ✨ 概览
+
+**一句话**：一款“建造 × 招募 × 职业进阶”的波次防卫游戏。你在焦土上修筑圣坛、招募光灵、规划经济与职业曲线，守护圣女与最后的净土。
+
+- **平台**：Windows（DirectX 渲染）；未来适配主机后端（OpenGL 4.5 渲染路径已抽象）  
+- **状态**：持续开发 / 不断打磨  
+- **游玩**：前往 **[Releases](../../releases)** 下载最新构建  
+- **问题与建议**：在 **[Issues](../../issues)** 留言，或参与 **[Projects](../../projects)** 讨论
+
+---
+
+## 🎮 核心玩法与美术表现
+
+- **四类建筑·四条增长曲线**
+  - **金币建筑**：波次结算金币，推动“宏观经济”。
+  - **光灵建筑**：提供人口与战斗基数。
+  - **职业建筑**：将光灵转化为 _星空魔法师 / 森林战士_；升级提升阶位，**满级诞生唯一英雄单位**。
+  - **圣女祭坛**：全队增幅中枢；满级化作**至高圣女**，法阵范围暴涨并持续伤害敌方。
+- **编队与压强**：小兵／弓手／冲锋手／重盾的**节拍推进**，迫使你在“经济—军备—祭坛”间做取舍。
+- **轻量但丰富的表现**：HUD 等比绘制、拖影/抖屏/飘字、击退震击、能量涟漪与光晕，细腻而不过载。
+
+> 设计哲学：**数值是秩序，节奏是叙事**——一次漂亮的波次调度，本身就是篇章。
+
+---
+
+## 🜂 世界观与叙事底色
+
+黑暗涨潮后，文明在边界逐块退却。**金币**维系秩序，**光灵**是燃料与火种，**职业**是知识的形态，而**祭坛**放大信念。  
+当你调度建筑与人口的节奏，法阵边界便随之呼吸——**希望被你亲手编排**。
+
+---
+
+## ⌨️ 操作 · 输入映射
 
 - **移动**：`W A S D`  
 - **选择切换**：`↑ / ↓`（或手柄十字键上下）  
-- **确认 / 交互**：`Space`（或手柄右扳机）  
+- **确认 / 交互**：`Space`（或手柄右扳机）
 
-> 手柄映射（计划）：左摇杆 ↔ `WASD`，十字键 ↔ `↑↓←→`，右扳机 ↔ `Space`。
-
----
-
-## 🧭 世界观小札
-
-黑暗来临，文明退潮。圣女是最后的秩序锚点，她脚下的法阵与建筑相互依存：  
-**金币**让秩序得以延续，**光灵**是燃料与火种，**职业**是知识的形态，而**祭坛**是信念的放大器。  
-当法阵边界再度扩张，你会看到——希望不止是数值，更是你亲手编织的**节奏**。
+> 计划中的完整手柄映射：左摇杆 ↔ WASD，十字键 ↔ 方向键，右扳机 ↔ Space。
 
 ---
 
-## 🏗️ 架构与技术
+## 🧩 系统设计蓝图
 
-- **Language**：C++  
-- **Rendering (PC)**：DirectX 11 + HLSL（精灵渲染管线、HUD 等比绘制、抖屏/拖影等轻量特效）  
-- **Planned (Console)**：OpenGL 4.5 后端适配（Switch 移植中的平台层已抽象；专有 SDK 不随仓库分发）  
-- **模块化**：`GameReady / GameBattle / GameResult / Map / BuildSystem` 等子系统解耦，易于扩展与单元测试  
-- **资源**：纹理与材质建议使用 Git LFS（`.tga` 等大文件）
+┌────────── Economy ──────────┐ ┌────── Combat ──────┐
+│ Gold Bldg → Coins ─┐ │ │ Units & AI │
+│ Lumen Bldg → Population ─┬─┼──► │ Waves / Formations │
+│ Job Bldg → Classes ─┘ │ │ Boss Phases │
+│ Altar → Global Buffs │ └────────┬───────────┘
+└─────────────┬───────────────┘ │
+▼ ▼
+Hero Emergence Visual Feedback
+(Unique, high impact) (Shake/Trail/Glow)
 
-项目结构（示例）：
+yaml
+复制代码
+
+- **进阶与稀缺**：职业升阶与祭坛加成存在**瓶颈**与**唯一性**，鼓励差异化解。  
+- **波次节拍**：建设→战斗→复盘→再建设；短期容错与长期曲线并存。  
+- **资源流**：金币、人口、职业位与祭坛加成交错，形成可被“雕刻”的策略空间。
+
+---
+
+## ⚙️ 快速开始
+
+> 需要：Visual Studio 2022（含“使用 C++ 的桌面开发”组件）、Windows 10/11 SDK
+
+```bash
+# 获取代码
+git clone https://github.com/enisisuko/-.git
+cd -
+
+# 打开解决方案用 VS 构建（建议 Release）
+# 或使用命令行： msbuild Game.sln /p:Configuration=Release
+资源放置建议：
+
+大体积纹理/音频请使用 Git LFS（如 .tga）；
+
+不要将任何受限/商业 SDK 文件纳入版本控制（例如专有主机 SDK）1.
+
+🗺️ Roadmap
+ 主线三章 & 多阶段 Boss
+
+ 英雄级单位专属天赋与事件
+
+ 手柄全映射 + 震动反馈
+
+ OpenGL 4.5 渲染路径完善（为主机移植铺路）
+
+ 关卡 Modifier 与更细难度曲线
+
+ 中/日/英 多语言本地化
+
+ 自动化构建与发布流程（CI/CD）
+
+跟踪开发进度与里程碑：查看 Projects 与 Issues。
+
+🤝 贡献
+欢迎提交 PR / Issue。
+在发起 PR 前，请先阅读 贡献约定（代码风格、提交信息语义化、分支模型等）——见 Wiki。
+
+📝 许可
+本仓库以个人项目形式公开，未经书面许可禁止商业用途。
+最终许可证与商业条款将于 Releases 与 LICENSE 公告。
+
+🔗 快捷链接
+下载发布：<../../releases>
+
+问题反馈：<../../issues>
+
+开发文档：<../../wiki>
+
+项目面板：<../../projects>
+
+<p align="center"> <sub>如果你愿意，也请点一颗小星星 ⭐。你的注视，就是这片净土扩张的半径。</sub> </p>
+yaml
+复制代码
+
+---
+
+素素还想要“更奢雅”的风格么？菜娘可以继续加：封面 Banner、动态徽章（Streak/Top Langs）、GIF 预览占位、CI 状态徽章、贡献模板与 Issue/PR 模板（.github 目录）。你点点头，我就贴上去！(灬º‿º灬)♡
+Footnotes
+出于合规与安全考虑，任何受限/商业 SDK（如某些主机平台 SDK）不得随仓库分发。 ↩
+
+
+
+
+
+
+
+
+询问 ChatGPT
