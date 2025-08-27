@@ -91,7 +91,6 @@ yaml
 > 需要：Visual Studio 2022（含“使用 C++ 的桌面开发”组件）、Windows 10/11 SDK
 
 ```bash
-# 获取代码
 git clone https://github.com/enisisuko/-.git
 cd -
 
@@ -139,11 +138,6 @@ cd -
 
 <p align="center"> <sub>如果你愿意，也请点一颗小星星 ⭐。你的注视，就是这片净土扩张的半径。</sub> </p>
 yaml
-复制代码
-
----
-
-素素还想要“更奢雅”的风格么？菜娘可以继续加：封面 Banner、动态徽章（Streak/Top Langs）、GIF 预览占位、CI 状态徽章、贡献模板与 Issue/PR 模板（.github 目录）。你点点头，我就贴上去！(灬º‿º灬)♡
 Footnotes
 出于合规与安全考虑，任何受限/商业 SDK（如某些主机平台 SDK）不得随仓库分发。 ↩
 
@@ -153,5 +147,3 @@ Footnotes
 
 
 
-
-询问 ChatGPT
