@@ -1,5 +1,5 @@
 
-=== 日文版 README ===
+##=== 日文版 README ===
 cat > README.ja.md << 'MD'
 
 
