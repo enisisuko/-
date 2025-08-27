@@ -3,7 +3,7 @@
 cat > README.ja.md << 'MD'
 
 <!-- lang switch --> <p align="right">🌐 言語: <a href="./README.md">简体中文</a> · <b>日本語</b></p> <!-- hero --> <h1 align="center">光霊伝説 · Lumen Saga</h1> <p align="center"><em>文明が退いたとしても、光を灯す者がいる。</em></p> <p align="center"> <a href="../../releases"><img alt="Releases" src="https://img.shields.io/badge/download-releases-3b82f6"></a> <a href="../../issues"><img alt="Issues" src="https://img.shields.io/github/issues/enisisuko/-"></a> <a href="../../commits"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/enisisuko/-"></a> <a href="../../stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/enisisuko/-?style=social"></a> </p> <p align="center"> <a href="#-概要">概要</a> · <a href="#-コアゲームプレイと表現">ゲーム性</a> · <a href="#-世界観とナラティブ">世界観</a> · <a href="#-操作--入力マッピング">操作</a> · <a href="#-システム設計">システム</a> · <a href="#-クイックスタート">開始</a> · <a href="#-roadmap">Roadmap</a> · <a href="#-コントリビュート">貢献</a> </p>
-✨ 概要
+## ✨ 概要
 一言で：建設 × 募兵 × 職業進化による「ウェーブ防衛」ゲーム。焦土で祭壇を築き、光霊を招き、経済と職業曲線を編成して、聖女と最後の浄土を護ります。
 
 プラットフォーム：Windows（DirectX レンダリング）。将来的にコンソール後段へ（OpenGL 4.5 パスは抽象化済み）
@@ -14,7 +14,7 @@ cat > README.ja.md << 'MD'
 
 要望/不具合：Issues または Projects へ
 
-🎮 コアゲームプレイと表現
+## 🎮 コアゲームプレイと表現
 4 種の建物・4 つの成長曲線
 
 ゴールド建物：ウェーブ終了時にコインを精算し、経済を駆動。
@@ -35,7 +35,7 @@ cat > README.ja.md << 'MD'
 暗黒が満ち、文明は縁から後退した。コインは秩序を保ち、光霊は燃料であり火種。職業は知のかたち、そして祭壇は信の増幅器。
 建設と人口のリズムを編むとき、陣域は呼吸し、希望はあなたの手で編曲される。
 
-⌨️ 操作 · 入力マッピング
+## ⌨️ 操作 · 入力マッピング
 移動：W A S D
 
 選択切替：↑ / ↓（または十字キー上下）
@@ -44,7 +44,7 @@ cat > README.ja.md << 'MD'
 
 予定：左スティック ↔ WASD、十字キー ↔ 方向キー、右トリガー ↔ Space。
 
-🧩 システム設計
+## 🧩 システム設計
 ```
 ┌────────── Economy ──────────┐     ┌────── Combat ──────┐
 │ Gold → Coin Flow ─┐             │     │ Units / AI          │
@@ -61,7 +61,7 @@ cat > README.ja.md << 'MD'
 
 資源流：コイン／人口／職枠／祭壇バフが交差し、彫刻可能な戦略空間を形成。
 
-⚙️ クイックスタート
+## ⚙️ クイックスタート
 必要：Visual Studio 2022（C++デスクトップ開発）、Windows 10/11 SDK
 
 ```
@@ -75,7 +75,7 @@ cd -
 
 制限付き/商用 SDK はバージョン管理に含めないでください1.
 ```
-🗺️ Roadmap
+## 🗺️ Roadmap
  本編 3 章 & 段階的ボス
 
  英雄ユニット専用の特性とイベント
@@ -90,13 +90,13 @@ cd -
 
  CI/CD による自動ビルドと配布
 
-🤝 コントリビュート
+## 🤝 コントリビュート
 PR / Issue を歓迎します。PR 前に 貢献ガイド（コード規約、コミットメッセージ、ブランチ運用）をご一読ください——Wiki を参照。
 
-📝 ライセンス
+## 📝 ライセンス
 本リポジトリは個人プロジェクトとして公開中であり、商用利用は禁止です。最終的なライセンスは Releases および LICENSE にて告知します。
 
-🔗 クイックリンク
+## 🔗 クイックリンク
 ダウンロード：<../../releases>
 
 不具合・提案：<../../issues>
