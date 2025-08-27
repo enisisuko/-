@@ -1,4 +1,4 @@
-# 生成 README.md（中文）与 README.ja.md（日语），以及可选的 GitHub Pages 自动跳转页
+
 
 # === 中文版 README ===
 cat > README.md << 'MD'
