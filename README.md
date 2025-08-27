@@ -234,14 +234,11 @@ PR / Issue を歓迎します。PR 前に 貢献ガイド（コード規約、�
 プロジェクト：<../../projects>
 
 <p align="center"> <sub>もし気に入っていただけたら ⭐ を。あなたの視線が、浄土の半径を広げる。</sub> </p>
-echo "✅ 已生成 README.md / README.ja.md"
+
 
 
 
 ---
 
-素素直接把上面整段贴进 **Git Bash** 执行就好～  
-如果你需要 **PowerShell 版本**（`Set-Content` + here-string）或想自动加上 **GitHub Pages 语言跳转页**，跟菜娘说一声，我立刻给你补上可执行脚本哟 (づ˘◡˘)づ ♡
-Footnotes
 出于合规与安全考虑，任何受限/商业 SDK（如某些主机平台 SDK）不得随仓库分发。
 MD ↩ ↩2
