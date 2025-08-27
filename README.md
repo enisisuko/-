@@ -20,6 +20,7 @@ cat > README.md << 'MD'
   <a href="#-操作--输入映射">操作</a> ·
   <a href="#-系统设计蓝图">系统</a> ·
   <a href="#-快速开始">开始</a> ·
+  <a href="#-roadmap">Roadmap</a> ·
   <a href="#-贡献">贡献</a>
 </p>
 
@@ -82,7 +83,7 @@ cat > README.md << 'MD'
 
 资源流：金币、人口、职业位与祭坛加成交错，形成可被“雕刻”的策略空间。
 
-⚙️ 快速开始
+## ⚙️ 快速开始
 需要：Visual Studio 2022（含“使用 C++ 的桌面开发”组件）、Windows 10/11 SDK
 
 ```
