@@ -2,6 +2,7 @@
 === 日文版 README ===
 cat > README.ja.md << 'MD'
 
+<!-- lang switch -->
 
 
 
